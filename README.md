@@ -24,3 +24,14 @@ Edit `data.js`. Post time, venue, ticket links, and the horses array all live th
 ## Weather
 
 The race-day forecast comes from [Open-Meteo](https://open-meteo.com/) — no API key needed. Open-Meteo's forecast horizon is ~16 days; outside that window the widget shows a placeholder.
+
+## Deploy to Vercel
+
+The repo is Vercel-ready — no build step, no framework preset needed. `vercel.json` enables clean URLs (so `/horses` serves `horses.html`) and sets long-lived cache headers on static assets.
+
+Two ways to deploy:
+
+- **GitHub integration:** import the repo at <https://vercel.com/new>, leave all build settings empty, and deploy.
+- **CLI:** `npm i -g vercel && vercel` (first run links the project, subsequent runs deploy). Use `vercel --prod` for production.
+
+For local development against Vercel's routing (clean URLs, headers), run `vercel dev` instead of `python3 -m http.server`.
