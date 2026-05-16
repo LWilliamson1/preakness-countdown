@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Field — Preakness Countdown</title>
+  <meta name="description" content="Horses, jockeys, trainers, and owners for the 151st Preakness Stakes." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23000'/%3E%3Ccircle cx='32' cy='32' r='14' fill='%23FBE54D'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%23000'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text">The Preakness</span>
+    </div>
+    <nav>
+      <a href="index.html">Countdown</a>
+      <a href="horses.html" aria-current="page">The Field</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero-compact">
+      <p class="eyebrow" id="edition-line">151st Running · Pimlico Race Course · Baltimore, MD</p>
+      <h1 class="hero-title">The Field</h1>
+      <p class="muted">A closer look at every horse entered — jockey, trainer, owner, and what to watch for.</p>
+    </section>
+
+    <section class="field">
+      <div class="card-grid" id="card-grid"><!-- populated by script.js --></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><a href="index.html">&larr; Back to countdown</a></p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
