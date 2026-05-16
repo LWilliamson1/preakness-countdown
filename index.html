@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Preakness Countdown — 151st Running</title>
+  <meta name="description" content="Live countdown to the Preakness Stakes at Pimlico, with running odds, jockeys, tickets, and weather." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23000'/%3E%3Ccircle cx='32' cy='32' r='14' fill='%23FBE54D'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%23000'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text">The Preakness</span>
+    </div>
+    <nav>
+      <a href="index.html" aria-current="page">Countdown</a>
+      <a href="horses.html">The Field</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow" id="edition-line">151st Running · Pimlico Race Course · Baltimore, MD</p>
+      <h1 class="hero-title">Post Time at Old Hilltop</h1>
+
+      <div class="countdown" id="countdown" aria-live="polite">
+        <div class="unit"><span class="num" id="cd-days">--</span><span class="label">Days</span></div>
+        <div class="sep">:</div>
+        <div class="unit"><span class="num" id="cd-hours">--</span><span class="label">Hours</span></div>
+        <div class="sep">:</div>
+        <div class="unit"><span class="num" id="cd-minutes">--</span><span class="label">Minutes</span></div>
+        <div class="sep">:</div>
+        <div class="unit"><span class="num" id="cd-seconds">--</span><span class="label">Seconds</span></div>
+      </div>
+
+      <p class="post-time" id="post-time-line"></p>
+
+      <div class="cta-row">
+        <a id="tickets-btn" class="btn btn-primary" href="https://www.preakness.com/tickets" target="_blank" rel="noopener">Buy Tickets</a>
+        <a id="calendar-btn" class="btn btn-ghost" target="_blank" rel="noopener">Add to Google Calendar</a>
+      </div>
+
+      <aside class="weather" id="weather" aria-label="Forecast for race day at Pimlico">
+        <div class="weather-loading">Loading race-day forecast for Baltimore…</div>
+      </aside>
+    </section>
+
+    <section class="odds">
+      <div class="section-head">
+        <h2>Running Odds</h2>
+        <p class="muted">Morning line shown below. Tap a horse for a full breakdown of jockey, trainer, and owner.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table class="odds-table" id="odds-table">
+          <thead>
+            <tr>
+              <th scope="col" class="num-col">PP</th>
+              <th scope="col">Horse</th>
+              <th scope="col">Jockey</th>
+              <th scope="col" class="odds-col">Odds</th>
+              <th scope="col" class="action-col"><span class="sr-only">Details</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- populated by script.js -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="more-tickets">
+        <h3>Where to Wager</h3>
+        <ul id="wager-links"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Unofficial fan site. Race data should be verified against the official program at <a href="https://www.preakness.com" target="_blank" rel="noopener">preakness.com</a>.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
